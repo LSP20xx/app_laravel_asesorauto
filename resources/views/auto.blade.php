@@ -50,6 +50,26 @@
                             <img src="/public/assets/img/autos/{{ $auto->id }}/{{ $auto->imagen_6 }}" alt="img">
                         </div>
                         @endif
+                        @if($auto->imagen_7 != null)<
+                        <div class="product-tab-single-big-item">
+                            <img src="/public/assets/img/autos/{{ $auto->id }}/{{ $auto->imagen_7 }}" alt="img">
+                        </div>
+                        @endif
+                        @if($auto->imagen_8 != null)
+                        <div class="product-tab-single-big-item">
+                            <img src="/public/assets/img/autos/{{ $auto->id }}/{{ $auto->imagen_8 }}" alt="img">
+                        </div>
+                        @endif
+                        @if($auto->imagen_9 != null)
+                        <div class="product-tab-single-big-item">
+                            <img src="/public/assets/img/autos/{{ $auto->id }}/{{ $auto->imagen_9 }}" alt="img">
+                        </div>
+                        @endif
+                        @if($auto->imagen_10 != null)
+                        <div class="product-tab-single-big-item">
+                            <img src="/public/assets/img/autos/{{ $auto->id }}/{{ $auto->imagen_10 }}" alt="img">
+                        </div>
+                        @endif
                     </div>
                     <!--Slider Active Class-->
                 </div>

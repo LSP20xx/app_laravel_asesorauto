@@ -77,10 +77,10 @@ class AutosController extends Controller
         $auto->save();
 
         $dir = $_SERVER['DOCUMENT_ROOT'].'/public/assets/img/autos/'.$auto->id;
-        
+
         mkdir($dir, 0755);
 
-        $archivos = ['imagen_1', 'imagen_2', 'imagen_3', 'imagen_4', 'imagen_5', 'imagen_6'];
+        $archivos = ['imagen_1', 'imagen_2', 'imagen_3', 'imagen_4', 'imagen_5', 'imagen_6', 'imagen_7', 'imagen_8', 'imagen_9', 'imagen_10'];
 
         foreach($archivos as $archivo){
             if($request->hasFile($archivo)){
@@ -92,7 +92,7 @@ class AutosController extends Controller
         }
 
         $auto->save();
-        
+
         DB::table('auto_tiene_segmento')
             ->insert(['id_auto' => $auto->id, 'id_segmento' => $request->id_segmento]);
 
@@ -136,7 +136,7 @@ class AutosController extends Controller
         foreach($auto_tiene_equipamientos as $auto_tiene_equipamiento){
             $tiene_equipamiento[] = $auto_tiene_equipamiento->id_equipamiento;
         }
-        
+
         $auto = auto::find($id);
 
         return view('admin.autos.edit', compact('auto','marcas', 'combustibles', 'vendedores', 'segmentos', 'equipamientos', 'tiene_segmento', 'tiene_equipamiento'));
@@ -166,7 +166,7 @@ class AutosController extends Controller
         $auto->vendido = $request->has('vendido') ? 1 : 0;
         $auto->timestamps = false;
 
-        $archivos = ['imagen_1', 'imagen_2', 'imagen_3', 'imagen_4', 'imagen_5', 'imagen_6'];
+        $archivos = ['imagen_1', 'imagen_2', 'imagen_3', 'imagen_4', 'imagen_5', 'imagen_6', 'imagen_7', 'imagen_8', 'imagen_9', 'imagen_10'];
 
         $dir = $_SERVER['DOCUMENT_ROOT'].'/public/assets/img/autos/'.$auto->id;
 
@@ -196,7 +196,7 @@ class AutosController extends Controller
         }
 
         return redirect()->route('autos.index')->with('success','Se modificó el auto !');
-        
+
     }
 
     /**

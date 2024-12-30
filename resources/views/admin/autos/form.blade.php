@@ -183,48 +183,80 @@
         </div>
 
         <div class="row">
-            <div class="col-sm-2">
+            <div class="col-sm-1">
                 @php
                 if( isset($auto->imagen_1) && ($auto->imagen_1 != null || $auto->imagen_1 != '')){
                 echo '<img class="card-img-top" src="/public/assets/img/autos/'.$auto->id.'/'.$auto->imagen_1.'">';
                 }
                 @endphp
             </div>
-            <div class="col-sm-2">
+            <div class="col-sm-1">
                 @php
                 if(isset($auto->imagen_2) && ($auto->imagen_2 != null || $auto->imagen_2 != '')){
                 echo '<img class="card-img-top" src="/public/assets/img/autos/'.$auto->id.'/'.$auto->imagen_2.'">';
                 }
                 @endphp
             </div>
-            <div class="col-sm-2">
+            <div class="col-sm-1">
                 @php
                 if(isset($auto->imagen_3) && ($auto->imagen_3!= null || $auto->imagen_3 != '')){
                 echo '<img class="card-img-top" src="/public/assets/img/autos/'.$auto->id.'/'.$auto->imagen_3.'">';
                 }
                 @endphp
             </div>
-            <div class="col-sm-2">
+            <div class="col-sm-1">
                 @php
                 if(isset($auto->imagen_4) && ($auto->imagen_4!= null || $auto->imagen_4 != '')){
                 echo '<img class="card-img-top" src="/public/assets/img/autos/'.$auto->id.'/'.$auto->imagen_4.'">';
                 }
                 @endphp
             </div>
-            <div class="col-sm-2">
+            <div class="col-sm-1">
                 @php
                 if(isset($auto->imagen_5) && ($auto->imagen_5!= null || $auto->imagen_5 != '')){
                 echo '<img class="card-img-top" src="/public/assets/img/autos/'.$auto->id.'/'.$auto->imagen_5.'">';
                 }
                 @endphp
             </div>
-            <div class="col-sm-2">
+            <div class="col-sm-1">
                 @php
                 if(isset($auto->imagen_6) && ($auto->imagen_6!= null || $auto->imagen_6 != '')){
                 echo '<img class="card-img-top" src="/public/assets/img/autos/'.$auto->id.'/'.$auto->imagen_6.'">';
                 }
                 @endphp
             </div>
+            <div class="col-sm-1">
+                @php
+                if(isset($auto->imagen_7) && ($auto->imagen_7!= null || $auto->imagen_7 != '')){
+                echo '<img class="card-img-top" src="/public/assets/img/autos/'.$auto->id.'/'.$auto->imagen_7.'">';
+                }
+                @endphp
+            </div>
+            <div class="col-sm-1">
+                @php
+                if(isset($auto->imagen_8) && ($auto->imagen_8!= null || $auto->imagen_8 != '')){
+                echo '<img class="card-img-top" src="/public/assets/img/autos/'.$auto->id.'/'.$auto->imagen_8.'">';
+                }
+                @endphp
+            </div>
+            <div class="col-sm-1">
+                @php
+                if(isset($auto->imagen_9) && ($auto->imagen_9!= null || $auto->imagen_9 != '')){
+                echo '<img class="card-img-top" src="/public/assets/img/autos/'.$auto->id.'/'.$auto->imagen_9.'">';
+                }
+                @endphp
+            </div>
+            <div class="col-sm-1">
+                @php
+                if(isset($auto->imagen_10) && ($auto->imagen_10!= null || $auto->imagen_10 != '')){
+                echo '<img class="card-img-top" src="/public/assets/img/autos/'.$auto->id.'/'.$auto->imagen_10.'">';
+                }
+                @endphp
+            </div>
+            <div class="col-sm-2">
+            </div>
+
+
         </div>
 
         <div class="row">
@@ -288,7 +320,7 @@
             }
         });
 
-        
+
 
         $("#marca").change(function() {
             $.ajax({
